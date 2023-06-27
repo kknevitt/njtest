@@ -41,7 +41,24 @@ export default function Page() {
         <li><Link href={'/routing'}>This is a link to this page</Link></li>
         <li><Link href={`/${true && 'routing'}`}>This is an interpolated link</Link></li>
         <li><ActiveCheckLink path={'/routing'}/></li>
-        <li>the scroll=false option can be used when the href is an id to stop the default route segment scrolling
+        <li>the scroll=false option can be used when the href is an id to stop the default route segment scrolling</li>
+        <hr />
+        <h4>Route Groups</h4>
+        <li>What happens if you mark a folder as a route group?</li>
+        <li>What are 2 use cases for route groups?</li>
+        <li>What is the convention for naming a route group folder?</li>
+        <li><Link href='/routing/inner-route-group-example'>Example of page within a nested group</Link></li>
+        <li>How could you opt to have specific route share the same layout?</li>
+        <li><Link href='/routing/other-route-group-example'>Example of shared layout</Link></li>
+        <li>What happens if you have two or more route groups that resolve to the same url?</li>
+        <hr />
+        <h4>Dynamic Routes</h4>
+        <li>How do you mark a route as being dynamic?</li>
+        <li><Link href={`/routing/slugs/i-am-a-snail`}>Example of dynamic routing - where slug could be dynamic</Link></li>
+        <li>How can you generate static routes at build time?</li>
+        <li>What is the benefit of this?</li>
+        <li>What are catch-all-segments?</li>
+        <li><Link href='routing/catch-all-params/1/2/3/4/5'>Example catch-all-segment</Link></li>
       </ul>
     </>
   )
